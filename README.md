@@ -8,56 +8,56 @@ O projeto segue a **Clean Architecture** organizada por features com 3 camadas p
 
 ```
 lib/
-├── 📂 core/                          # Código compartilhado
+├── 📂 core/                          
 │   ├── di/
-│   │   └── injection_container.dart  # Configuração GetIt
+│   │   └── injection_container.dart  
 │   ├── errors/
-│   │   └── failures.dart             # Classes de falhas
+│   │   └── failures.dart             
 │   └── usecases/
-│       └── usecase.dart              # Interface base UseCase
+│       └── usecase.dart             
 │
 └── 📂 features/
-    └── tasks/                        # Feature de Tarefas
+    └── tasks/                        
         │
-        ├── 📂 domain/                # 🎯 CAMADA DE DOMÍNIO
+        ├── 📂 domain/                
         │   ├── entities/
-        │   │   └── task.dart         # Entidade Task
+        │   │   └── task.dart         
         │   ├── repositories/
-        │   │   └── task_repository.dart          # Interface do repositório
+        │   │   └── task_repository.dart          
         │   └── usecases/
-        │       ├── get_tasks.dart    # UC: Buscar tarefas
-        │       ├── add_task.dart     # UC: Adicionar tarefa
-        │       ├── delete_task.dart  # UC: Deletar tarefa
-        │       └── toggle_task.dart  # UC: Alternar status
+        │       ├── get_tasks.dart    
+        │       ├── add_task.dart     
+        │       ├── delete_task.dart  
+        │       └── toggle_task.dart  
         │
-        ├── 📂 data/                  # 💾 CAMADA DE DADOS
+        ├── 📂 data/                  
         │   ├── models/
-        │   │   └── task_model.dart   # Model com serialização JSON
+        │   │   └── task_model.dart   
         │   ├── datasources/
-        │   │   └── task_local_datasource.dart    # SharedPreferences
+        │   │   └── task_local_datasource.dart    
         │   └── repositories/
-        │       └── task_repository_impl.dart     # Implementação do repositório
+        │       └── task_repository_impl.dart     
         │
-        └── 📂 presentation/          # 🎨 CAMADA DE APRESENTAÇÃO
+        └── 📂 presentation/          
             ├── bloc/
-            │   ├── task_bloc.dart    # Lógica de negócio (BLoC)
-            │   ├── task_event.dart   # Eventos
-            │   └── task_state.dart   # Estados
+            │   ├── task_bloc.dart    
+            │   ├── task_event.dart   
+            │   └── task_state.dart   
             ├── pages/
-            │   └── tasks_page.dart   # Tela principal
+            │   └── tasks_page.dart   
             └── widgets/
-                ├── add_task_button.dart      # Botão flutuante
-                ├── add_task_dialog.dart      # Dialog para adicionar
-                ├── filter_tabs.dart          # Abas de filtro
-                ├── task_item.dart            # Item da lista
-                └── task_list.dart            # Lista de tarefas
+                ├── add_task_button.dart     
+                ├── add_task_dialog.dart      
+                ├── filter_tabs.dart          
+                ├── task_item.dart            
+                └── task_list.dart            
 
 test/
 └── features/
     └── tasks/
-        ├── domain/usecases/          # Testes de Use Cases
-        ├── data/repositories/        # Testes de Repository
-        └── presentation/bloc/        # Testes de BLoC
+        ├── domain/usecases/          
+        ├── data/repositories/        
+        └── presentation/bloc/        
 ```
 ## 🚀 Como Rodar o Projeto
 
