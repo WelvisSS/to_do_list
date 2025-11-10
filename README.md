@@ -2,6 +2,15 @@
 
 Aplicativo de lista de tarefas desenvolvido em Flutter seguindo os princípios de **Clean Architecture**, **SOLID** e utilizando **BLoC** para gerenciamento de estado.
 
+## 📱 Screenshots
+
+<div align="center">
+  <img src="assets/screenshots/1.png" alt="Screenshot 1" width="200"/>
+  <img src="assets/screenshots/2.png" alt="Screenshot 2" width="200"/>
+  <img src="assets/screenshots/3.png" alt="Screenshot 3" width="200"/>
+  <img src="assets/screenshots/4.png" alt="Screenshot 4" width="200"/>
+</div>
+
 ## 🏗️ Estrutura da Arquitetura
 
 O projeto segue a **Clean Architecture** organizada por features com 3 camadas principais:
